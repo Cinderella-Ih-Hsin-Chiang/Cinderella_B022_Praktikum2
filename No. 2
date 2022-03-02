@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+   int matA [2][2]={4, 8, 2, 10};
+   int matB [2][2]={-5, 4, 8, -12};
+   
+   cout<<"Matriks A"<<endl;
+   for (int a=0;a<2;a++){
+       for(int b=0;b<2;b++){
+        cout<<matA[a][b]<<" ";
+       }
+       cout<<endl;
+   }
+   cout<<"Matriks B"<<endl;
+   for(int c=0; c<2; c++){
+       for(int d=0; d<2;d++){
+    cout<<matB[c][d]<<" ";
+       }
+       cout<<endl;
+   }
+   cout<<"Hasil Penjumlahan Matrik A dan B "<<endl;
+   for (int e=0; e<2; e++){
+       for (int f=0; f<2; f++){
+           cout<<matA[e][f] - matB[e][f]<<" ";
+       }
+       cout<<endl;
+   }
+    return 0;
+}
